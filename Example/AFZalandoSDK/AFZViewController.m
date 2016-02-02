@@ -7,6 +7,7 @@
 //
 
 #import "AFZViewController.h"
+#import <AFZalandoSDK/AFZApi.h>
 
 @interface AFZViewController ()
 
@@ -17,7 +18,25 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-	// Do any additional setup after loading the view, typically from a nib.
+    
+    AFZRequestArticlesList *request2 = [AFZRequestArticlesList new];
+    request2.filterByActivationDate = @[kAFZArticleActivationDateThisWeek, kAFZArticleActivationDateLastWeek];
+    request2.queryFields = @[@"name"];
+    [request2 performRequestWithCompletion:[self mediator:^(id  _Nullable result) {
+        
+    }]];
+    
+    AFZRequest *request = [[AFZRequestArticleById alloc] initWithArticleId:@"BE824G002-C11"];
+    
+    [request performRequestWithCompletion:[self mediator:^(id  _Nullable result) {
+        
+    }]];
+}
+
+- (void(^)(id  _Nullable result, NSError * _Nullable error))mediator:(void(^)(id  _Nullable result))completion{
+    return ^(id  _Nullable result, NSError * _Nullable error){
+        completion(result);
+    };
 }
 
 - (void)didReceiveMemoryWarning

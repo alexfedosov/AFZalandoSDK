@@ -1,0 +1,1 @@
+../../../../../Pod/Classes/Api/Articles/AFZRequestArticleById.h

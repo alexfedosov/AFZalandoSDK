@@ -9,5 +9,10 @@
 #ifndef AFZApi_h
 #define AFZApi_h
 
+#import "AFZFieldConstants.h"
+
+#import "AFZRequestArticlesList.h"
+#import "AFZRequestArticleById.h"
+#import "AFZRequestMediaRelatedToArticleWithId.h"
 
 #endif /* AFZApi_h */

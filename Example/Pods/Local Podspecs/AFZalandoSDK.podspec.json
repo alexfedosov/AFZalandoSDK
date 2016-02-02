@@ -1,0 +1,32 @@
+{
+  "name": "AFZalandoSDK",
+  "version": "0.1.0",
+  "summary": "A short description of AFZalandoSDK.",
+  "description": "",
+  "homepage": "https://github.com/alexfedosov/AFZalandoSDK",
+  "license": "MIT",
+  "authors": {
+    "Alexander Fedosov": "alexander.a.fedosov@gmail.com"
+  },
+  "source": {
+    "git": "https://github.com/alexfedosov/AFZalandoSDK.git",
+    "tag": "0.1.0"
+  },
+  "social_media_url": "https://twitter.com/alexfedosov",
+  "platforms": {
+    "ios": "7.0"
+  },
+  "requires_arc": true,
+  "source_files": "Pod/Classes/**/*",
+  "resource_bundles": {
+    "AFZalandoSDK": [
+      "Pod/Assets/*.png"
+    ]
+  },
+  "public_header_files": "Pod/Classes/**/*.h",
+  "dependencies": {
+    "AFNetworking": [
+      "~> 2.6.3"
+    ]
+  }
+}

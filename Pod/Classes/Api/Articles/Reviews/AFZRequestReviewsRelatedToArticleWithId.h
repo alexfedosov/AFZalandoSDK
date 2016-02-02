@@ -6,8 +6,14 @@
 //
 //
 
-#import <AFZalandoSDK/AFZalandoSDK.h>
+#import <Foundation/Foundation.h>
+#import "AFZRequest.h"
+#import "AFZRequestPagination.h"
 
-@interface AFZRequestReviewsRelatedToArticleWithId : AFZRequest
+@interface AFZRequestReviewsRelatedToArticleWithId : AFZRequest<AFZRequestPagination>
+
+@property (nonatomic, strong) NSString * _Nonnull articleIdentifier;
+
+- (instancetype _Nonnull)initWithArticleId:(NSString * _Nonnull)articleIdentifier NS_DESIGNATED_INITIALIZER;
 
 @end

@@ -1,5 +1,5 @@
 //
-//  AFZRequestMediaRelatedToArticleById.h
+//  AFZRequestMediaRelatedToArticleWithId.h
 //  Pods
 //
 //  Created by Alexander Fedosov on 27.01.16.

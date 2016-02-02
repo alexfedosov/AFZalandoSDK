@@ -8,6 +8,12 @@
 
 #import <Foundation/Foundation.h>
 
+@class AFZRequest;
+
 @interface AFZRequestScheduler : NSObject
+
+- (void)scheduleRequest:(AFZRequest * _Nonnull)request;
+- (void)cancelRequest:(AFZRequest * _Nonnull)request;
+- (void)cancelAllRequests;
 
 @end

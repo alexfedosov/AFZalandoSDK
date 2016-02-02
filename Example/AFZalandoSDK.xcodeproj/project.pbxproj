@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1D59D732291C8E90F06E4C8A /* libPods-AFZalandoSDK_Tests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5D984CD90C134FCC856896D3 /* libPods-AFZalandoSDK_Tests.a */; };
 		6003F58E195388D20070C39A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F58D195388D20070C39A /* Foundation.framework */; };
 		6003F590195388D20070C39A /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F58F195388D20070C39A /* CoreGraphics.framework */; };
 		6003F592195388D20070C39A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F591195388D20070C39A /* UIKit.framework */; };
@@ -20,9 +21,8 @@
 		6003F5B2195388D20070C39A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F591195388D20070C39A /* UIKit.framework */; };
 		6003F5BA195388D20070C39A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 6003F5B8195388D20070C39A /* InfoPlist.strings */; };
 		6003F5BC195388D20070C39A /* Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6003F5BB195388D20070C39A /* Tests.m */; };
-		7F71B3E337B906C59F88C4BC /* Pods_AFZalandoSDK_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 82B466F77A0B279037FDEFF5 /* Pods_AFZalandoSDK_Example.framework */; };
 		873B8AEB1B1F5CCA007FD442 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 873B8AEA1B1F5CCA007FD442 /* Main.storyboard */; };
-		C26C5E9D864672C727047FB9 /* Pods_AFZalandoSDK_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F7FBE93F2203FDCF365D401B /* Pods_AFZalandoSDK_Tests.framework */; };
+		994410E726B6B75CE00CCEAE /* libPods-AFZalandoSDK_Example.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 055FF661D2AC10D7A4BB66CB /* libPods-AFZalandoSDK_Example.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,10 +36,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		055FF661D2AC10D7A4BB66CB /* libPods-AFZalandoSDK_Example.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-AFZalandoSDK_Example.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		0871C96CB1921725E37F89A3 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		28CB81E6CDB7C9FACE7C843C /* Pods-AFZalandoSDK_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AFZalandoSDK_Example.release.xcconfig"; path = "Pods/Target Support Files/Pods-AFZalandoSDK_Example/Pods-AFZalandoSDK_Example.release.xcconfig"; sourceTree = "<group>"; };
 		2D219767A0A074BF1BF944B0 /* Pods-AFZalandoSDK_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AFZalandoSDK_Example.debug.xcconfig"; path = "Pods/Target Support Files/Pods-AFZalandoSDK_Example/Pods-AFZalandoSDK_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		3C76946FA3B956D1D8943B87 /* Pods-AFZalandoSDK_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AFZalandoSDK_Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-AFZalandoSDK_Tests/Pods-AFZalandoSDK_Tests.release.xcconfig"; sourceTree = "<group>"; };
+		5D984CD90C134FCC856896D3 /* libPods-AFZalandoSDK_Tests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-AFZalandoSDK_Tests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		6003F58A195388D20070C39A /* AFZalandoSDK_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AFZalandoSDK_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6003F58D195388D20070C39A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		6003F58F195388D20070C39A /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -60,11 +62,9 @@
 		6003F5BB195388D20070C39A /* Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Tests.m; sourceTree = "<group>"; };
 		606FC2411953D9B200FFA9A0 /* Tests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Tests-Prefix.pch"; sourceTree = "<group>"; };
 		7B721FCB8958ECDE9B04CC2C /* AFZalandoSDK.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = AFZalandoSDK.podspec; path = ../AFZalandoSDK.podspec; sourceTree = "<group>"; };
-		82B466F77A0B279037FDEFF5 /* Pods_AFZalandoSDK_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AFZalandoSDK_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		873B8AEA1B1F5CCA007FD442 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		93BB3097991838F6D8BB8B6C /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		CAD59D26C1F161CF0357AB60 /* Pods-AFZalandoSDK_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AFZalandoSDK_Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-AFZalandoSDK_Tests/Pods-AFZalandoSDK_Tests.debug.xcconfig"; sourceTree = "<group>"; };
-		F7FBE93F2203FDCF365D401B /* Pods_AFZalandoSDK_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AFZalandoSDK_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -75,7 +75,7 @@
 				6003F590195388D20070C39A /* CoreGraphics.framework in Frameworks */,
 				6003F592195388D20070C39A /* UIKit.framework in Frameworks */,
 				6003F58E195388D20070C39A /* Foundation.framework in Frameworks */,
-				7F71B3E337B906C59F88C4BC /* Pods_AFZalandoSDK_Example.framework in Frameworks */,
+				994410E726B6B75CE00CCEAE /* libPods-AFZalandoSDK_Example.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -86,7 +86,7 @@
 				6003F5B0195388D20070C39A /* XCTest.framework in Frameworks */,
 				6003F5B2195388D20070C39A /* UIKit.framework in Frameworks */,
 				6003F5B1195388D20070C39A /* Foundation.framework in Frameworks */,
-				C26C5E9D864672C727047FB9 /* Pods_AFZalandoSDK_Tests.framework in Frameworks */,
+				1D59D732291C8E90F06E4C8A /* libPods-AFZalandoSDK_Tests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -121,8 +121,8 @@
 				6003F58F195388D20070C39A /* CoreGraphics.framework */,
 				6003F591195388D20070C39A /* UIKit.framework */,
 				6003F5AF195388D20070C39A /* XCTest.framework */,
-				82B466F77A0B279037FDEFF5 /* Pods_AFZalandoSDK_Example.framework */,
-				F7FBE93F2203FDCF365D401B /* Pods_AFZalandoSDK_Tests.framework */,
+				055FF661D2AC10D7A4BB66CB /* libPods-AFZalandoSDK_Example.a */,
+				5D984CD90C134FCC856896D3 /* libPods-AFZalandoSDK_Tests.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
