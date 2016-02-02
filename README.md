@@ -4,7 +4,7 @@
 
 Work in progress. If you want, please use it just for fun
 
-[![CI Status](http://img.shields.io/travis/Alexander Fedosov/AFZalandoSDK.svg?style=flat)](https://travis-ci.org/Alexander Fedosov/AFZalandoSDK)
+[![CI Status](http://img.shields.io/travis/alexfedosov/AFZalandoSDK.svg?style=flat)](https://travis-ci.org/alexfedosov/AFZalandoSDK)
 [![Version](https://img.shields.io/cocoapods/v/AFZalandoSDK.svg?style=flat)](http://cocoapods.org/pods/AFZalandoSDK)
 [![License](https://img.shields.io/cocoapods/l/AFZalandoSDK.svg?style=flat)](http://cocoapods.org/pods/AFZalandoSDK)
 [![Platform](https://img.shields.io/cocoapods/p/AFZalandoSDK.svg?style=flat)](http://cocoapods.org/pods/AFZalandoSDK)
