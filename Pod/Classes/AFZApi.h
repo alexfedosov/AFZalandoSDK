@@ -11,6 +11,8 @@
 
 #import "AFZFieldConstants.h"
 
+#import "AFZApiClient.h"
+#import "AFZRequestScheduler.h"
 #import "AFZRequestArticlesList.h"
 #import "AFZRequestArticleById.h"
 #import "AFZRequestMediaRelatedToArticleWithId.h"

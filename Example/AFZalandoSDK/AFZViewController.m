@@ -19,24 +19,29 @@
 {
     [super viewDidLoad];
     
-    AFZRequestArticlesList *request2 = [AFZRequestArticlesList new];
-    request2.filterByActivationDate = @[kAFZArticleActivationDateThisWeek, kAFZArticleActivationDateLastWeek];
-    request2.queryFields = @[@"name"];
-    [request2 performRequestWithCompletion:[self mediator:^(id  _Nullable result) {
+    AFZRequestArticlesList *articleListRequest = [AFZRequestArticlesList new];
+    articleListRequest.filterByActivationDate = @[kAFZArticleActivationDateThisWeek, kAFZArticleActivationDateLastWeek];
+    articleListRequest.queryFields = @[@"name"];
+    [articleListRequest performRequestWithCompletion:^(id  _Nullable result, NSError * _Nullable error) {
         
-    }]];
+    }];
     
-    AFZRequest *request = [[AFZRequestArticleById alloc] initWithArticleId:@"BE824G002-C11"];
-    
-    [request performRequestWithCompletion:[self mediator:^(id  _Nullable result) {
+    NSString *exampleArticleID = @"BE824G002-C11";
+    AFZRequestArticleById *articleRequest = [[AFZRequestArticleById alloc] initWithArticleId:exampleArticleID];
+    [articleRequest performRequestWithCompletion:^(id  _Nullable result, NSError * _Nullable error) {
         
-    }]];
-}
-
-- (void(^)(id  _Nullable result, NSError * _Nullable error))mediator:(void(^)(id  _Nullable result))completion{
-    return ^(id  _Nullable result, NSError * _Nullable error){
-        completion(result);
-    };
+    }];
+    
+    [[articleRequest requestRelatedReviews] performRequestWithCompletion:^(id  _Nullable result, NSError * _Nullable error) {
+        
+    }];
+    
+    [[articleRequest requestRelatedMedia] performRequestWithCompletion:^(id  _Nullable result, NSError * _Nullable error) {
+        
+    }];
+    
+    [[[AFZApiClient defaultApi] requestScheduler] cancelRequest:articleRequest];
+    [[[AFZApiClient defaultApi] requestScheduler] cancelAllRequests];
 }
 
 - (void)didReceiveMemoryWarning
